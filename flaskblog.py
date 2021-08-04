@@ -9,7 +9,7 @@ from forms import RegistrationForm, LoginForm
 
 # app config
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '3ce640eb16424716c5ebbed586dc2b29' # app.config is how you set values on the app
+app.config['SECRET_KEY'] = 'removed' # app.config is how you set values on the app
 if __name__ == '__main__':
     app.run(debug=True)
 
