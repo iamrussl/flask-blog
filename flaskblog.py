@@ -46,8 +46,8 @@ def register_page():
     form = RegistrationForm()
     if form.validate_on_submit():
         flash(f'Account created for {form.username.data}!', 'success') # the 'success' category is from bootstrap and is passed into the layout.html when creating a flash message.
-        return redirect(url_for('home_page')) # will redirect the user to home_page function (/home)
-    return render_template('register2.html', title='Register', form=form)
+        return redirect(url_for('home_page')) # will redirect the user to home_page function (/home_page)
+    return render_template('register.html', title='Register', form=form)
 
 @app.route('/login')
 def login_page():

@@ -41,7 +41,7 @@
       <main role="main" class="container">
         <div class="row">
           <div class="col-md-8">
-            {% with messages = get_flashed_messages(with_categories=true) %}
+            {% with messages = get_flashed_messages(with_categories=true) %} <!-- with_categories will allow us to grab the 'success' cat in flash on the register function on flaskblog.py-->
               {% if messages %}
                 {% for category, message in messages %}
                   <div class="alert alert-{{ category }}"> <!-- the category here allows us to pull the 'success' category from the app.route register, if statement, flash return -->
